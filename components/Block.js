@@ -21,7 +21,7 @@ const Cube=({position,size,color})=>{
         >
             <boxGeometry args={size}/>
             {/* <meshStandardMaterial color={isHovered?"red":color} wireframe/> */}
-            <MeshWobbleMaterial factor={isHovered?1:0.8} speed={isHovered?5:3} color={isHovered?"red":color}  />
+            <MeshWobbleMaterial factor={isHovered?1:0.8} speed={isHovered?5:3} color={isHovered?"red":color}  wireframe/>
         </mesh>
     )
 }
